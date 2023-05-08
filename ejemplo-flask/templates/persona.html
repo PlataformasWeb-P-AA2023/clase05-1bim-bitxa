@@ -22,7 +22,9 @@
 <script>
 $(document).ready(function() {
   var id_persona = $("#id_persona").val(); 
-  var url = 'http://127.0.0.1:5984/demo001/_design/tercero/_view/persona?include_docs=true&key="'+id_persona+'"';
+  //http://127.0.0.1:5984/demo01/_design/id/_view/id_view?key=%222cd9565c8010dca1f7fe53062300693a%22
+  //http://127.0.0.1:5984/demo01/_design/lenguaje/_view/lenguaje_view?include_docs=true?
+  var url = 'http://127.0.0.1:5984/demo01/_design/id/_view/id_view?key="'+id_persona+'"&include_docs=true';
   console.log(id_persona);
   console.log(url);
   $.ajax({
